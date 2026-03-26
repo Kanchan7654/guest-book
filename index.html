@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Guestbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Digital Guestbook</h1>
+            <p>Leave a note for the community!</p>
+        </header>
+
+        <section class="form-card">
+            <form id="guestbook-form">
+                <div class="input-group">
+                    <label for="username">Your Name</label>
+                    <input type="text" id="username" placeholder="e.g. Jane Doe" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Write something nice..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Sign Guestbook</button>
+            </form>
+        </section>
+
+        <section class="entries-section">
+            <h2>Recent Entries</h2>
+            <div id="entries-container">
+                <div class="entry">
+                    <p class="entry-text">"This is a wonderful digital space! Glad to be here."</p>
+                    <p class="entry-author">— Alex Smith</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
